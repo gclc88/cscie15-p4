@@ -19,11 +19,9 @@ Route::group(['middleware' => ['web']], function() {
 		
 	Route::get('/image/{id}', 'GameController@getImage');
 	
-	Route::get('/test/{topic}', function ($topic) {
-		return 'Testing: '.$topic;
+	Route::get('/test', function () {
+		echo config('mail.driver');
+        return '';
 	});
-	
-	Route::get('/test/{topic}', function ($topic) {
-		return 'Testing: '.$topic;
-	});
+    
 });
