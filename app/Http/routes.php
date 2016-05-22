@@ -11,6 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => ['web']], function() {
+	Route::get('/', function () {
+//		return '<img src="/images/flower.jpg" alt="flowers" style="opacity:0.5">';
+		return view('main');
+	});
+		
+	Route::get('/image/{id}', 'GameController@getImage');
+	
+	Route::get('/test/{topic}', function ($topic) {
+		return 'Testing: '.$topic;
+	});
+	
+	Route::get('/test/{topic}', function ($topic) {
+		return 'Testing: '.$topic;
+	});
 });
