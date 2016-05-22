@@ -20,7 +20,9 @@ Route::group(['middleware' => ['web']], function() {
 	Route::get('/image/{id}', 'GameController@getImage');
 	
 	Route::get('/test', function () {
-		echo config('mail.driver');
+		echo 'app.debug: '.config('app.debug');
+		echo '<br>app.env: '.config('app.env');
+		echo '<br>app.url: '.config('app.url');
         return '';
 	});
     
