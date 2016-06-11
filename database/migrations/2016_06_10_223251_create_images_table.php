@@ -19,6 +19,7 @@ class CreateImagesTable extends Migration
           $table->timestamps();
 
           # The rest of the fields...
+          $table->increments('id');       // needed by Model
           $table->integer('owner_id');
           $table->integer('number');
           $table->string('file_name');
