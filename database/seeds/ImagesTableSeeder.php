@@ -11,7 +11,7 @@ class ImagesTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('Images')->insert([
+      DB::table('images')->insert([
           'created_at' => Carbon\Carbon::now()->toDateTimeString(),
           'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
           'owner_id' => 1,
@@ -19,7 +19,7 @@ class ImagesTableSeeder extends Seeder
           'file_name' => 'number1.jpg',
       ]);
 
-      DB::table('Images')->insert([
+      DB::table('images')->insert([
           'created_at' => Carbon\Carbon::now()->toDateTimeString(),
           'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
           'owner_id' => 1,
