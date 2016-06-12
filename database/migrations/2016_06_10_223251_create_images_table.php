@@ -21,7 +21,7 @@ class CreateImagesTable extends Migration
           # The rest of the fields...
           $table->increments('id');       // needed by Model
           $table->integer('number');
-          $table->string('file_name');
+          $table->string('name');
       });
     }
 

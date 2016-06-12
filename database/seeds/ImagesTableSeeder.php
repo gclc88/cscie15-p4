@@ -16,14 +16,14 @@ class ImagesTableSeeder extends Seeder
       DB::table('images')->insert([
           'created_at' => Carbon\Carbon::now()->toDateTimeString(),
           'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-          'file_name' => 'number1.jpg',
+          'name' => 'number1',
           'user_id' => 1
       ]);
 
       DB::table('images')->insert([
           'created_at' => Carbon\Carbon::now()->toDateTimeString(),
           'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-          'file_name' => 'number2.jpg',
+          'name' => 'number2',
           'user_id' => 1
       ]);
     }
