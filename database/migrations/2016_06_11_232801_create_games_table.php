@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateImagesTable extends Migration
+class CreateGamesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateImagesTable extends Migration
      */
     public function up()
     {
-      Schema::create('images', function (Blueprint $table) {
+      Schema::create('games', function (Blueprint $table) {
 
           # This generates two columns: `created_at` and `updated_at` to
           # keep track of changes to a row
@@ -20,8 +20,7 @@ class CreateImagesTable extends Migration
 
           # The rest of the fields...
           $table->increments('id');       // needed by Model
-          $table->integer('number');
-          $table->string('file_name');
+          $table->string('name');
       });
     }
 
@@ -32,6 +31,6 @@ class CreateImagesTable extends Migration
      */
     public function down()
     {
-      Schema::drop('images');
+      Schema::drop('games');
     }
 }

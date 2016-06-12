@@ -63,3 +63,10 @@ Route::get('/debug', function() {
 
 Route::get('/practice/ex1', 'PracticeController@getEx1');
 Route::get('/practice/ex2', 'PracticeController@getEx2');
+Route::get('/practice/ex3', 'PracticeController@getEx3');
+Route::get('/practice/ex4', 'PracticeController@getEx4');
+Route::get('/practice/ex5', 'PracticeController@getEx5');
+Route::get('/practice/ex6', 'PracticeController@getEx6');
+Route::get('/practice/ex7', 'PracticeController@getEx7');
+Route::get('/practice/ex8', 'PracticeController@getEx8');
+Route::get('/practice/ex9', 'PracticeController@getEx9');
