@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-//		return '<img src="/images/flower.jpg" alt="flowers" style="opacity:0.5">';
-	return view('main');
-});
 
 Route::get('/image/{id}', 'GameController@getImage');
 
@@ -58,6 +54,37 @@ Route::get('/debug', function() {
     }
 
     echo '</pre>';
+
+});
+
+#=====================================================
+# Authentication
+#=====================================================
+Route::get('/login', 'Auth\AuthController@getlogin');
+Route::post('/login', 'Auth\AuthController@postlogin');
+
+Route::get('/register', 'Auth\AuthController@getRegister');
+Route::post('/register', 'Auth\AuthController@postRegister');
+Route::get('/logout', 'Auth\AuthController@logout');
+
+Route::get('/', function () {
+//		return '<img src="/images/flower.jpg" alt="flowers" style="opacity:0.5">';
+	return view('main');
+});
+
+Route::get('/show-login-status', function() {
+
+    # You may access the authenticated user via the Auth facade
+    $user = Auth::user();
+
+    if($user) {
+        echo 'You are logged in.';
+        dump($user->toArray());
+    } else {
+        echo 'You are not logged in.';
+    }
+
+    return;
 
 });
 

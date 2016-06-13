@@ -33,8 +33,8 @@
 		$("a.groupFancyBox").fancybox({
 			'transitionIn'	:	'elastic',
 			'transitionOut'	:	'elastic',
-			'speedIn'		:	600, 
-			'speedOut'		:	200, 
+			'speedIn'		:	600,
+			'speedOut'		:	200,
 			'overlayShow'	:	false,
 		});
 	});
@@ -49,15 +49,11 @@
 <body onload="init()">
 	<!-- header -->
 	<div class="header-Background">
-		<h1 id="header1">CSCIE12 - Project Page 2</h1>
+		<h1 id="header1">CSCIE15 - Project by Godrey CHENG</h1>
 		<h2> <em id="dateTime"> </em>&nbsp;</h2>
 	</div>
 	<!-- end header -->
 	<!-- site navigation -->
-	<ul class="navBar span-24" id="link">
-		<li><a onclick='changePage("project-p1.html")'>Project Page #1</a></li>
-		<li><a onclick='changePage("project-p3.html")'>Project Page #3</a></li>
-	</ul>
 	<hr>
 	<div class="main span-24 last">
 		<div class="span-5">
@@ -65,17 +61,17 @@
 			<ul class="navCol">
 			<li> Review Images: </li>
 			<li>
-				<a class="groupFancyBox" rel="group1-10" href="images/view.png" title="View 1 - 10">
+				<a class="groupFancyBox" rel="group1-10" href="images/memory/1-10.jpg" title="View 1 - 10">
 					<figure>
-						<img class="view-icon" src="images/view.png"/>
+						<img class="view-icon" src="images/memory/1-10.jpg"/>
 						<figcaption>View 1 - 10</figcaption>
 					</figure>
 				</a>
 			</li>
 			<li>
-				<a class="groupFancyBox" rel="group11-20" href="images/view.png" title="View 11 - 20">
+				<a class="groupFancyBox" rel="group11-20" href="images/memory/11-20.jpg" title="View 11 - 20">
 					<figure>
-						<img class="view-icon" src="images/view.png" />
+						<img class="view-icon" src="images/memory/11-20.jpg" />
 						<figcaption>View 11 - 20</figcaption>
 					</figure>
 				</a>
@@ -90,11 +86,12 @@
 		case of number, it is found to be hard to remember dull repeating integers. It is found to be easier to remember
 		familiar objects associated to that number than the number itself. For example, to remember the
 		number 23, it would be easier for someone to memorize "Michael Jordan", who's team number is 23.
-		<p> The list on the left are some of the images found to be easily associated to their associated numbers.
-		Press the image button to review those associations. You may practice the associations by doing practicing
-		exercises by pressing the button below.<br />
+		<p> The list on the left are some sample images found to be easily associated to their associated numbers.
+			Please register and sign-in to your account in order to do practice exercises. You may create your own association
+			from you account.
+			<br />
 		<div id="testButton">
-			<a href="#" class="ui-btn ui-btn-inline ui-corner-all openEx">Practice Exercise</a>
+			<a href="#" class="ui-btn ui-btn-inline ui-corner-all openEx">Sign-in</a>
 		</div>
 		</div>
 	</div>

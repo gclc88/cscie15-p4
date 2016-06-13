@@ -1,8 +1,4 @@
 function init() {
-	var image = $.cookie("backgroundImage");
-	if (!image)
-		image = 'flower-bg.jpg';
-	setBodyBackgroundImage(image);
 	startTime();
 }
 
@@ -54,4 +50,3 @@ function changePage(link) {
 	var url = getDomain() + link;
 	$(location).attr('href', url);
 }
-

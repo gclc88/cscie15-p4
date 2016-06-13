@@ -18,5 +18,17 @@ class UsersTableSeeder extends Seeder
           'password' => 'poiuytrewq',
           'email' => 'gclc88@gmail.com',
       ]);
+
+      $user = \MemGame\User::firstOrCreate(['email' => 'jill@harvard.edu']);
+      $user->name = 'Jill';
+      $user->email = 'jill@harvard.edu';
+      $user->password = \Hash::make('helloworld');
+      $user->save();
+
+      $user = \MemGame\User::firstOrCreate(['email' => 'jamal@harvard.edu']);
+      $user->name = 'Jamal';
+      $user->email = 'jamal@harvard.edu';
+      $user->password = \Hash::make('helloworld');
+      $user->save();
     }
 }
